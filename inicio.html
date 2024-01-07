@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de inicio</title>
+    <style>
+
+    @import url('https://fonts.cdnfonts.com/css/arcadia');
+        /* Estilos CSS */
+        body {
+          font-family: arcadia, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-image: url('./imagnes/fondo.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 0.5); /* Agrega transparencia para mejorar la legibilidad */
+        }
+        
+        h1 {
+          font-size: 100px;
+          color: #fff;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        p {
+          font-size: 30px;
+          color: #fff;
+          margin-bottom: 50px;
+        }
+        
+        .button {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #ff6f00;
+          color: #fff;
+          text-decoration: none;
+          border-radius: 5px;
+          font-size: 20px;
+          transition: background-color 0.3s ease;
+          animation: pulse 2s infinite; 
+        }
+        
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.2);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <div class="Principal">
+      <div class="container">
+        <h1>BREAKOUT</h1>
+        <p>¡Bienvenido a un mundo de posibilidades infinitas!</p>
+        <a class="button" href="index.html">¡Comienza a jugar!</a>
+      </div>
+    </div>
+    </body>
+</html>
